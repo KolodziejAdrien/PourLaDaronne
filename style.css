@@ -1,6 +1,6 @@
 :root{
 	--clr-primary-200: #cbecf5;
-	--clr-primary-400: #473839;
+	--clr-primary-400: #44138e;
 
 	--clr-neutral-100: #f8f8f8;
 	--clr-neutral-900: #161a19;
@@ -16,6 +16,7 @@ body{
 	font-weight: 400;
 	font-size: 1.3125rem;
 	line-height: 1.6;
+	background: linear-gradient(150deg, var(--clr-primary-200) 0%, var(--clr-primary-200) 74%, var(--clr-primary-400) 100%); 
 }
 
 .section-title{
@@ -71,6 +72,36 @@ p {
 section{
 	padding: 3rem 0;
 } */
+header{
+	width: 100%;
+	min-height: 10vh;
+	padding: 1em;
+}
+.logo{
+	float: left;
+}
+nav{
+	float: right;
+}
+header ul{
+	display: flex;
+	gap: 2em;
+	margin: 0 auto;
+}
+@media(max-width:40em) {
+	header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.logo{
+		padding: .7em 0;
+	}
+	header ul{
+		gap: 1em;
+	}
+}
 
 .container{
 	margin-inline: auto;
@@ -132,3 +163,26 @@ section{
 
 
 /* End Hero section */
+
+/* galerie section */
+
+.galerie{
+	padding: 2em 0;
+	gap: 3em;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.img-item{
+	width: 90%;
+	height: 40vh;
+}
+
+@media (min-width: 40em){
+	.galerie{
+		flex-direction: row;
+	}
+	.img-item{
+		width: 40%;
+	}
+}
+/* End galerie section */
