@@ -1,8 +1,15 @@
+@import 'https://fonts.googleapis.com/css2?family=Lobster&display=swap';
 :root{
+	--ff-title: 'Lobster', sans-serif;
+
 	--clr-primary-200: #cbecf5;
-	--clr-primary-400: #44138e;
+	--clr-primary-300: #ff5858;
+	--clr-primary-400: #cc2e5d;
+
+	--clr-linear-500: linear-gradient(143deg, rgba(252,111,111,1) 0%, rgba(255,88,88,1) 52%, rgba(204,46,93,1) 100%);
 
 	--clr-neutral-100: #f8f8f8;
+	--clr-neutral-500: rgb(129, 129, 129);
 	--clr-neutral-900: #161a19;
 }
 *,
@@ -16,21 +23,26 @@ body{
 	font-weight: 400;
 	font-size: 1.3125rem;
 	line-height: 1.6;
-	background: linear-gradient(150deg, var(--clr-primary-200) 0%, var(--clr-primary-200) 74%, var(--clr-primary-400) 100%); 
+	/* background: linear-gradient(150deg, var(--clr-primary-200) 0%, var(--clr-primary-200) 74%, var(--clr-primary-400) 100%);  */
+	background: linear-gradient(143deg, rgba(228,243,247,1) 0%, rgba(203,236,245,1) 64%, rgba(255,88,88,1) 96%, rgba(204,46,93,1) 100%);
 }
 
 .section-title{
 	margin-bottom: 1.5em;
+	font-family: var(--ff-title);
+	color: var(--clr-neutral-900);
+	font-size: 2.1rem;
 }
 
 @media (min-width: 40em){
-	.section-title{
-		font-size: 3rem;
+	.hero .section-title{
+		font-size: 3.5rem;
 	}	
 }
 
 a{
 	text-decoration: none;
+	color: var(--clr-neutral-900);
 }
 
 img{
@@ -68,10 +80,19 @@ p {
 	margin: 0;
 }
 
-/* header,
-section{
-	padding: 3rem 0;
-} */
+.animated-txt{
+	background: linear-gradient(to right, #000 50%, #ff5858 50%, #cc2e5d);
+	background-size: 200%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: .5s ease-out;
+}
+
+.animated-txt:hover{
+	background-position: -100%;
+}
+
+/* header */
 header{
 	width: 100%;
 	min-height: 10vh;
@@ -85,9 +106,11 @@ nav{
 }
 header ul{
 	display: flex;
-	gap: 2em;
 	margin: 0 auto;
+	gap: 2em;
+	line-height: 3;
 }
+
 @media(max-width:40em) {
 	header{
 		display: flex;
@@ -99,16 +122,22 @@ header ul{
 		padding: .7em 0;
 	}
 	header ul{
-		gap: 1em;
+		line-height: 1.6;
+		gap: .7em;
+	}
+	header ul a{
+		font-size: 1.2rem;
+		padding: .2em;
 	}
 }
+
+/* end header */
 
 .container{
 	margin-inline: auto;
 	/* width: min(90%, 70.5rem); */
 	width: 100%;
 	display: flex;
-	min-height: 100vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -140,10 +169,20 @@ header ul{
 	height: 100%;
 	overflow: hidden;
 }
-
+.bg-img img{
+	animation: backscale 12s ease infinite alternate;
+}
+.hero {
+	min-height: 100vh;
+}
 .hero li a{
 	color: var(--clr-neutral-900);
 	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+.hero h1{
+	font-size: 2.3rem;
 }
 
 
@@ -186,3 +225,95 @@ header ul{
 	}
 }
 /* End galerie section */
+
+/* Contact section */
+
+.form {
+	flex-direction: column;
+	justify-content: flex-start;
+	background: rgba(255,255,255, 0.2);
+	box-shadow: 0 1em 1.7em rgba(0,0,0,.05);
+	margin-top: 4em;
+	width: 30%;
+	min-height: 60vh;
+	border-radius: 1em;
+	backdrop-filter: blur(40px);
+	overflow: hidden;
+}
+
+@media (max-width:40em) {
+	.form{
+		width: 90%;
+		margin-top: 1em;
+	}
+}
+@media (min-width:40.1em) and (max-width:65em){
+	.form{
+		width: 60%;
+	}
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	width: 60%;
+	padding: 1em 0;
+}
+
+.form h2{
+	margin-top: 2em;
+	margin-bottom: 3em;
+	color: var(--clr-primary-300);
+}
+
+@media (max-width: 40em){
+	.form h2{
+		margin-bottom: .5em;
+	}
+}
+
+.form-item{
+	display: flex;
+	flex-direction: column;
+}
+.form-item label{
+	color: var(--clr-neutral-500);
+}
+.form-item input{
+	border: none;
+	border-radius: 1em;
+	line-height: 2;
+	overflow: hidden;
+	outline: none;
+	padding: .3em;
+}
+.form-item input:focus{
+	border: 1px solid var(--clr-neutral-500);
+}
+
+.form-btn button{
+	padding: .5em 1.5em;
+	border: none;
+	border-radius: 1em;
+	background: #fff;
+	color: var(--clr-primary-300);
+	font-weight: 500;
+	font-size: 1.1rem;
+	transition: all .5s ease-out;
+}
+.form-btn button:hover{
+	cursor: pointer;
+	color: #fff;
+	background: var(--clr-linear-500);
+}
+/* End Contact section */
+
+@keyframes backscale {
+	0%{
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.1);
+	}
+}
