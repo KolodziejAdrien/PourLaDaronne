@@ -1,7 +1,8 @@
 roboto
 KIWI MARU
 LEXEND
-MERRIWEATHER
+
+
 Della Respira
 
 
@@ -9,4 +10,4 @@ LORA
 Josefin Sans
 Permanent Marker
 
-c5f9ff
+d0faff bleu
