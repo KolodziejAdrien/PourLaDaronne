@@ -1,6 +1,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Lobster&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Della+Respira&display=swap';
 :root{
-	--ff-title: 'Lobster', sans-serif;
+	--ff-title: 'Della Respira', sans-serif;
 
 	--clr-primary-200: #cbecf5;
 	--clr-primary-300: #ff5858;
@@ -32,6 +33,7 @@ body{
 	font-family: var(--ff-title);
 	color: var(--clr-neutral-900);
 	font-size: 2.1rem;
+	text-transform: uppercase;
 }
 
 @media (min-width: 40em){
@@ -173,7 +175,7 @@ header ul{
 	animation: backscale 12s ease infinite alternate;
 }
 .hero {
-	min-height: 100vh;
+	height: 100vh;
 }
 .hero li a{
 	color: var(--clr-neutral-900);
