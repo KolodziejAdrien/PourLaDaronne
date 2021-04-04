@@ -217,7 +217,7 @@ header ul{
 
 .galerie{
 	padding: 2em 0;
-	gap: 7em 4em;
+	gap: 7em;
 	flex-direction: column;
 	flex-wrap: wrap;
 	position: relative;
