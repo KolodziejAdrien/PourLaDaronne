@@ -234,9 +234,9 @@ header ul{
 .text_reveal{
 	display: none;
 	position: absolute;
-	left: 30%;
-	right: 30%;
-	top: -2em;
+	left: 5%;
+	right: 5%;
+	top: -1.3em;
 }
 .img-item:hover .text_reveal,
 .img-item:focus{
@@ -249,6 +249,9 @@ header ul{
 	}
 	.img-item{
 		width: 40%;
+	}
+	.text_reveal{
+		top: -2em;
 	}
 }
 /* End galerie section */
