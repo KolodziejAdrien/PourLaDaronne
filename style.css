@@ -220,18 +220,27 @@ header ul{
 	gap: 7em 4em;
 	flex-direction: column;
 	flex-wrap: wrap;
+	position: relative;
 }
 .img-item{
 	width: 90%;
 	height: 40vh;
+	position: relative;
 }
 
 .img-item img{
 	object-fit: contain;
 }
-
-.img-item:hover{
-
+.text_reveal{
+	display: none;
+	position: absolute;
+	left: 30%;
+	right: 30%;
+	top: -2em;
+}
+.img-item:hover .text_reveal,
+.img-item:focus{
+	display: initial;
 }
 
 @media (min-width: 40em){
