@@ -3,13 +3,14 @@
 :root{
 	--ff-title: 'Della Respira', sans-serif;
 
-	--clr-primary-200: #dffcff;
+	--clr-primary-200: #d3ecee;
 	--clr-primary-300: #ff5858;
 	--clr-primary-400: #cc2e5d;
 
 	--clr-linear-500: linear-gradient(143deg, rgba(252,111,111,1) 0%, rgba(255,88,88,1) 52%, rgba(204,46,93,1) 100%);
 
 	--clr-neutral-100: #f8f8f8;
+	--clr-neutral-300: #ececec;
 	--clr-neutral-500: rgb(129, 129, 129);
 	--clr-neutral-900: #161a19;
 }
@@ -29,8 +30,9 @@ body{
 	font-weight: 400;
 	font-size: 1.3125rem;
 	line-height: 1.6;
+	background-color: var(--clr-neutral-300);
 	/* background: linear-gradient(150deg, var(--clr-primary-200) 0%, var(--clr-primary-200) 74%, var(--clr-primary-400) 100%);  */
-	background: linear-gradient(143deg, rgba(228,243,247,1) 0%, rgba(203,236,245,1) 64%, rgba(255,88,88,1) 96%, rgba(204,46,93,1) 100%);
+	/* background: linear-gradient(143deg, #7596a0 0%, #7596a0 64%, rgba(255,88,88,1) 96%, rgba(204,46,93,1) 100%); */
 }
 
 .section-title{
@@ -88,7 +90,7 @@ p {
 }
 
 .animated-txt{
-	background: linear-gradient(to right, #000 50%, #ff5858 50%, #cc2e5d);
+	background: linear-gradient(to right, var(--clr-neutral-900) 50%, #ff5858 50%, #cc2e5d);
 	background-size: 200%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -215,13 +217,21 @@ header ul{
 
 .galerie{
 	padding: 2em 0;
-	gap: 3em;
+	gap: 7em 4em;
 	flex-direction: column;
 	flex-wrap: wrap;
 }
 .img-item{
 	width: 90%;
 	height: 40vh;
+}
+
+.img-item img{
+	object-fit: contain;
+}
+
+.img-item:hover{
+
 }
 
 @media (min-width: 40em){
