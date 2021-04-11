@@ -2,6 +2,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Della+Respira&display=swap';
 :root{
 	--ff-title: 'Della Respira', sans-serif;
+	--ff-title2: 'Lobster', sans-serif;
 
 	--clr-primary-200: #d3ecee;
 	--clr-primary-300: #ff5858;
@@ -147,6 +148,7 @@ nav{
 }
 nav ul li a{
 	color: var(--clr-primary-200);
+	font-family: var(--ff-title2);
 }
 header ul{
 	display: flex;
@@ -280,6 +282,7 @@ header ul{
 }
 .nav-item a{
 	margin-left: 1em;
+	font-family: var(--ff-title2);
 }
 @media(max-width: 40em){
 	.galerie-title h2{
@@ -291,6 +294,9 @@ header ul{
 }
 .galerie-title h2{
 	margin-top: 1.5em;
+	font-family: var(--ff-title2);
+	font-weight: 300;
+	color: #707070fa;
 }
 .line{
 	display: block;
@@ -392,6 +398,7 @@ form{
 	margin-top: 2em;
 	margin-bottom: 3em;
 	color: var(--clr-primary-300);
+	font-family: var(--ff-title2);
 }
 
 @media (max-width: 40em){
