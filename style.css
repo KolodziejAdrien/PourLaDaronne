@@ -19,6 +19,7 @@
 *::after{
 	box-sizing: border-box;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 section,
 html,
@@ -79,6 +80,11 @@ p{
 
 .text-center{
 	text-align: center;
+}
+.flex{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 body,
@@ -244,12 +250,77 @@ header ul{
 
 /* galerie section */
 
+.nav-items{
+	flex-direction: column;
+	gap: .3em;
+	position: fixed;
+	z-index: 3;
+	width: 15em;
+	top: 40%;
+}
+@media(max-width: 40em){
+	.nav-items{
+		width: 7em;
+	}
+}
+.nav-item{
+	background: var(--clr-linear-500);
+	width: 100%;
+	left: -80%;
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
+	transition: all ease .5s;
+	z-index: 4;
+	position: relative;
+	justify-content: left;
+}
+.nav-item:hover,
+.active{
+	left: 0;
+}
+.nav-item a{
+	margin-left: 1em;
+}
+@media(max-width: 40em){
+	.galerie-title h2{
+		font-size: 1.3rem;
+	}
+}	
+.galerie-title{
+	width: 100%;
+}
+.galerie-title h2{
+	margin-top: 1.5em;
+}
+.line{
+	display: block;
+	position: absolute;
+	width: 40%;
+	background-color: #cacacafa;
+	height: 1px;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+}
+.galerie-container{
+	flex-direction: column;
+	gap: 1em;
+}
+
 .galerie{
 	padding: 2em 0;
 	gap: 7em;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
+	width: 100%;
 	position: relative;
+}
+@media (max-width: 40em){
+	.galerie{
+		flex-direction: column;
+		padding: .5em 0;
+		gap: 3em;
+	}
 }
 .img-item{
 	width: 90%;
@@ -273,9 +344,6 @@ header ul{
 } */
 
 @media (min-width: 40em){
-	.galerie{
-		flex-direction: row;
-	}
 	.img-item{
 		width: 40%;
 	}

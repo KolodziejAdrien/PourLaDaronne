@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,61 +24,142 @@
         </div>
     </header>
     <section>
-        <div class="container galerie">
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
-                </div>
-                <img src="./img/barbu.jpg" alt="">
+        <div class="nav-items flex">
+            <div class="nav-item flex btn">
+                <a  href="#paysage">Paysage</a>
             </div>
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
-                </div>
-                <img src="./img/big_bisous.jpg" alt="">
+            <div class="nav-item flex btn">
+                <a  href="#portrait">Portrait</a>
             </div>
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
-                </div>
-                <img src="./img/cerisier.jpg" alt="">
+            <div class="nav-item flex btn">
+                <a  href="#moto">Moto</a>
             </div>
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
-                </div>
-                <img src="./img/chichi.jpg" alt="">
+            <div class="nav-item flex btn">
+                <a  href="#divers">Divers</a>
             </div>
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
+        </div>
+
+        <div class="container galerie-container flex">
+
+            <div id="paysage" class="flex galerie-container">
+
+                <div class="galerie-title">
+                    <span class="line"></span>
+                    <h2 class="text-center">Paysage</h2>
                 </div>
-                <img src="./img/citron.jpg" alt="">
-            </div>
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
+                
+                <div class="flex galerie">
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/cerisier.jpg" alt="">
+                    </div>
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/grande_ville.jpg" alt="">
+                    </div>
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/citron.jpg" alt="">
+                    </div>
                 </div>
-                <img src="./img/cuicui.jpg" alt="">
             </div>
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
+
+
+            <div id="portrait" class="flex galerie-container">
+
+                <div class="galerie-title">
+                    <span class="line"></span>
+                    <h2 class="text-center">Portrait</h2>
                 </div>
-                <img src="./img/cuicui2.jpg" alt="">
-            </div>
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
+
+                <div class="flex galerie">
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/barbu.jpg" alt="">
+                    </div>
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/chichi.jpg" alt="">
+                    </div>
                 </div>
-                <img src="./img/etoiles.jpg" alt="">
             </div>
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
+
+            
+            <div id="moto" class="flex galerie-container">
+
+                <div class="galerie-title">
+                    <span class="line"></span>
+                    <h2 class="text-center">Moto</h2>
                 </div>
-                <img src="./img/grande_ville.jpg" alt="">
+
+                <div class="flex galerie">
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/motar.jpg" alt="">
+                    </div>
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/moteur_moto.jpg" alt="">
+                    </div>
+                </div>
             </div>
+
+
+            <div id="divers" class="flex galerie-container">
+
+                <div class="galerie-title">
+                    <span class="line"></span>
+                    <h2 class="text-center">Divers</h2>
+                </div>
+
+                <div class="flex galerie">
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/big_bisous.jpg" alt="">
+                    </div>
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/cuicui.jpg" alt="">
+                    </div>
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/cuicui2.jpg" alt="">
+                    </div>
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/etoiles.jpg" alt="">
+                    </div>
+                    <div class="img-item">
+                        <div class="text_reveal">
+                            <p class="text-center">Test text reveal</p>
+                        </div>
+                        <img src="./img/jungle.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
             <div class="img-item">
                 <div class="text_reveal">
                     <p class="text-center">Test text reveal</p>
@@ -90,12 +172,7 @@
                 </div>
                 <img src="./img/grosse_feuille2.jpg" alt="">
             </div>
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
-                </div>
-                <img src="./img/jungle.jpg" alt="">
-            </div>
+
             <div class="img-item">
                 <div class="text_reveal">
                     <p class="text-center">Test text reveal</p>
@@ -113,18 +190,6 @@
                     <p class="text-center">Test text reveal</p>
                 </div>
                 <img src="./img/madame_doigt_bizarre.jpg" alt="">
-            </div>
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
-                </div>
-                <img src="./img/motar.jpg" alt="">
-            </div>
-            <div class="img-item">
-                <div class="text_reveal">
-                    <p class="text-center">Test text reveal</p>
-                </div>
-                <img src="./img/moteur_moto.jpg" alt="">
             </div>
             <div class="img-item">
                 <div class="text_reveal">
@@ -164,6 +229,21 @@
             </div>
         </div>
     </section>
-    
+
+
+<script>
+    $(".btn").click( function(){
+    $(".btn.active").removeClass("active");
+
+    $(this).addClass("active");
+
+    $(document).on("click", function(e) {
+    if ($(e.target).is(".btn") === false) {
+      $(".btn.active").removeClass("active");
+    }
+  });
+});
+</script>
+
 </body>
 </html>
