@@ -206,7 +206,7 @@ header ul{
 .split{
 	display: flex;
 	flex-direction: column;
-}
+}	
 
 /* Hero section */
 .bg-img{
@@ -357,6 +357,23 @@ header ul{
 		top: -2em;
 	}
 }
+
+.btn-top{
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	border: none;
+	border-radius: 50%;
+	padding: 1em;
+	background: var(--clr-linear-500);
+	width: 4em;
+	height: 4em;
+	color: var(--clr-primary-200);
+	cursor: pointer;
+}
+.btn-top i{
+	font-size: 2rem;
+}
 /* End galerie section */
 
 /* Contact section */
@@ -379,7 +396,12 @@ header ul{
 		width: 90%;
 		margin-top: 1em;
 	}
+
+    .input:focus header{
+		display: none;
+	}
 }
+
 @media (min-width:40.1em) and (max-width:65em){
 	.form{
 		width: 60%;
