@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     <section>
         <div class="bg-img"><img src="./img/bg-hero.jpg" alt=""></div>
-    <header>
+    <header id="header">
         <div class="logo">
             <a href="./home.html" class="section-title animated-txt">Namako</a>
         </div>
@@ -24,7 +25,6 @@
         </div>
     </header>
 
-    <section>
         <div class="container form">
             <h2>Contact</h2>
             <form action="" method="POST" data-netlify="true">
@@ -38,14 +38,14 @@
                 </div>
                 <div class="form-item">
                     <label for="name">Message</label>
-                    <input type="textarea" name="message">
+                    <input type="textarea" name="message" class="area">
                 </div>
                 <div class="form-btn">
                     <button type="submit">Envoyer</button>
                 </div>
             </form>
         </div>
-    </section>
 </section>
+
 </body>
 </html>

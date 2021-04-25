@@ -397,9 +397,6 @@ header ul{
 		margin-top: 1em;
 	}
 
-    .input:focus header{
-		display: none;
-	}
 }
 
 @media (min-width:40.1em) and (max-width:65em){
@@ -443,6 +440,10 @@ form{
 	overflow: hidden;
 	outline: none;
 	padding: .3em;
+	font-weight: 600;
+	font-size: .9rem;
+	letter-spacing: 0.07em;
+	color: var(--clr-neutral-900);
 }
 .form-item input:focus{
 	border: 1px solid var(--clr-neutral-500);
