@@ -374,6 +374,15 @@ header ul{
 .btn-top i{
 	font-size: 2rem;
 }
+
+@media (max-width: 40em){
+	.btn-top{
+		width: 2.5em;
+		height: 2.5em;
+		right: 1.5em;
+		bottom: 1.5em;
+	}
+}
 /* End galerie section */
 
 /* Contact section */
