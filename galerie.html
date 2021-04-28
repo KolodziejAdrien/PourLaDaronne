@@ -235,20 +235,6 @@
     </section>
 
 
-<script>
-    $(".btn").click( function(){
-    $(".btn.active").removeClass("active");
-
-    $(this).addClass("active");
-
-    $(document).on("click", function(e) {
-    if ($(e.target).is(".btn") === false) {
-      $(".btn.active").removeClass("active");
-    }
-  });
-});
-</script>
-
 <script src="./app.js"></script>
 
 

@@ -9,3 +9,28 @@ function scrollFunction() {
       mybutton.style.display = "none";
     }
   }
+  
+// add class active to scrolling btn
+  $(".btn").click( function(){
+    $(".btn.active").removeClass("active");
+
+    $(this).addClass("active");
+
+    $(document).on("click", function(e) {
+    if ($(e.target).is(".btn") === false) {
+      $(".btn.active").removeClass("active");
+    }
+  });
+});
+
+
+// remove class btn when scroll
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 150) {
+        //clearHeader, not clearheader - caps H
+        $(".btn.active").removeClass("active");
+    }
+});
