@@ -382,6 +382,9 @@ header ul{
 		right: 1.5em;
 		bottom: 1.5em;
 	}
+	.btn-top i{
+		font-size: 1.6rem;
+	}
 }
 /* End galerie section */
 
