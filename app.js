@@ -10,17 +10,11 @@ function scrollFunction() {
     }
   }
   
-// add class active to scrolling btn
+// add & remove class active to scrolling btn
   $(".btn").click( function(){
     $(".btn.active").removeClass("active");
 
     $(this).addClass("active");
-
-    $(document).on("click", function(e) {
-    if ($(e.target).is(".btn") === false) {
-      $(".btn.active").removeClass("active");
-    }
-  });
 });
 
 
