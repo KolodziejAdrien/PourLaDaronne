@@ -254,11 +254,13 @@ header ul{
 
 .nav-items{
 	flex-direction: column;
-	gap: .3em;
 	position: fixed;
 	z-index: 3;
 	width: 15em;
 	top: 40%;
+}
+.nav-items > * + * {
+	margin-bottom: .3em;
 }
 @media(max-width: 40em){
 	.nav-items{
@@ -275,6 +277,9 @@ header ul{
 	z-index: 4;
 	position: relative;
 	justify-content: left;
+}
+.nav-item:first-child{
+	margin-bottom: .3em;
 }
 .nav-item:hover,
 .active{
@@ -315,8 +320,6 @@ header ul{
 
 .galerie{
 	padding: 2em 0;
-	gap: 7em;
-	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
 	position: relative;
@@ -325,7 +328,10 @@ header ul{
 	.galerie{
 		flex-direction: column;
 		padding: .5em 0;
-		gap: 4em;
+		flex-wrap: nowrap;
+	}
+	.img-item{
+		margin: 2em;
 	}
 }
 .img-item{
@@ -348,11 +354,19 @@ header ul{
 .img-item:focus{
 	display: initial;
 } */
-
-@media (min-width: 40em){
+@media (min-width: 40.1em) and (max-width: 50em){
+	.img-item{
+		width: 80%;
+		margin: 3em;
+	}
+}
+@media (min-width: 50em){
 	.img-item{
 		width: 37%;
+		margin: 3em;
 	}
+}
+@media (min-width: 40em){
 	.text_reveal{
 		top: -2em;
 	}
