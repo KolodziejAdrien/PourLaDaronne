@@ -17,11 +17,6 @@ function scrollFunction() {
     $(this).addClass("active");
 });
 
-$(".btn.active").click( function(){
-    $(".btn.active").removeClass("active");
-
-});
-
 
 // remove class btn when scroll
   $(window).scroll(function() {    
