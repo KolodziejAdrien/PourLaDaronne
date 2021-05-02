@@ -12,14 +12,13 @@ function scrollFunction() {
   
 // add & remove class active to scrolling btn
   $(".btn").click( function(){
-    // $(".btn.active").removeClass("active");
+     $(".btn.active").removeClass("active");
 
     $(this).addClass("active");
 });
 
-$(".btn.active").click( function(){
-    $(".btn").attr('class',"btn");
-
+$(".active").click( function(){
+    $(".active").removeClass("active");
 });
 
 
