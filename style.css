@@ -371,6 +371,9 @@ header ul{
 	cursor: pointer;
 	display: none;
 }
+.btn-top:focus{
+	outline: none;
+}
 .btn-top:hover i{
 	color: var(--clr-neutral-900);
 }
