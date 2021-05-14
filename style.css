@@ -105,7 +105,7 @@ p {
 	transition: .5s ease-out;
 }
 .animated-txt-dark{
-	background: linear-gradient(to right, var(--clr-neutral-900) 50%, #ff5858 50%, #cc2e5d);
+	background: linear-gradient(to right, var(--clr-neutral-900) 50%, #292424 50%, #ada7aa);
 	background-size: 200%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
