@@ -319,7 +319,6 @@ header ul{
 }
 .galerie-container{
 	flex-direction: column;
-	gap: 1em;
 }
 
 .galerie{
@@ -457,7 +456,6 @@ header ul{
 form{
 	display: flex;
 	flex-direction: column;
-	gap: 1em;
 	width: 60%;
 	padding: 1em 0;
 }
@@ -478,7 +476,14 @@ form{
 .form-item{
 	display: flex;
 	flex-direction: column;
+	margin: 1em 0;
 }
+@media (max-width: 40em) {
+	.form-item{
+		margin: .5em 0;
+	}
+}
+
 .form-item label{
 	color: var(--clr-neutral-300);
 }
@@ -500,6 +505,7 @@ form{
 
 .form-btn button{
 	padding: .5em 1.5em;
+	margin-top: 1em;
 	border: none;
 	border-radius: 1em;
 	background: #fff;
